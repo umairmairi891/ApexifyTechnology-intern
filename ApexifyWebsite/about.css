@@ -1,0 +1,283 @@
+  :root{
+    --gap: 60px;        /* space between items */
+    --duration: 12s;    /* speed: lower = faster */
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    width: 100%;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+    position: fixed;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+nav{
+    margin-top: 20px;
+}
+ a img{
+    width: 130px;
+    height: 50px;
+    margin-top: 20px;
+    color: aliceblue;
+}
+nav ul {
+    display: flex;
+    color: whitesmoke;
+    list-style: none;
+    margin-right: 3rem;
+}
+.container h2{
+    text-align: center;
+    padding: 5rem 5rem;
+}
+.main-content{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 50px;
+}
+.main-content .left{
+    width: 50%;
+}
+.main-content .left img{
+    border-radius: 2px;
+    width: 80%;
+    height: 80vh;
+}
+.main-content .right{
+    width: 40%;
+}
+.right h4{
+    color: blue;
+    font-size: 30px;
+    line-height: 0.5;
+}
+.right h1{
+    font-weight: bold;
+    font-size: 40px;
+}
+.right p{
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 20px;
+}
+.right .sub-heading{
+    display: flex;
+    justify-content: space-around;
+}
+.btn button{
+    padding: 10px;
+    background-color: teal;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.sub-heading ul{
+    list-style: none;
+}
+.sub-heading ul a{
+    text-decoration: underline;
+    font-size: 25px;
+    line-height: 2;
+    color: black;
+}
+.right{
+    animation: right-animation 2s linear;
+    animation-timeline: view( 80% 0%);
+}
+
+@keyframes right-animation {
+  0% { opacity: 0; transform: translateY(100px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+.left{
+    animation: left-animation 2s ;
+}
+.sub-heading ul{
+    list-style: none;
+}
+.sub-heading ul li a{
+    text-decoration: none;
+}
+.sub-heading hr{
+    width: 140%;
+}
+.meeting-section{
+    background-color: rgb(11, 30, 80);
+    padding: 4rem;
+    display: flex;
+    gap: 5rem;
+}
+.left-side h2{
+text-align: start;
+color: whitesmoke;
+font-size: 3rem;
+}
+.left-side h4{
+    font-weight: bold;
+    font-size: 2rem;
+    color: whitesmoke;
+}
+.left-side p{
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+.right-side h1{
+    float: right;
+    color: whitesmoke;
+    display: block;
+    font-size: 5rem;
+    margin-top: 2rem;
+}
+.right-side h4 {
+    float: right;
+    color: whitesmoke;
+    display: block;
+    font-size: 2rem;
+}
+.right-side img{
+  width: 100%;
+  height: 80%;
+}
+.why{
+    display: flex;
+    gap: 10;
+    padding: 8rem;
+}
+.left-section{
+    width: 70%;
+    padding: 5rem;
+   background:linear-gradient(45deg , blue, purple ,blue, purple);
+   border-radius: 1.5rem;
+}
+.left-section img{
+    width: 40%;
+}
+.img{
+    display: flex;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+.img h2{
+    display: block;
+    padding: 2rem;
+    font-weight: bold;
+}
+.img p{
+    display: block;
+}
+.img2{
+    display: flex;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+.img2 h2{
+    padding: 2rem;
+}
+.right-section{
+    padding: 2rem 6rem;
+    width: 70%;
+}
+.right-section h2{
+    padding: 0;
+    text-align: start;
+    color: darkblue;
+}
+.right-section h1{
+    padding: 0;
+    font-size: 3rem;
+}
+.right-section p{
+    font-size: 1.5rem;
+}
+.right-section ul {
+    list-style: none;
+    font-size: 1.5rem;
+}
+.right-section ul li span{
+    margin-right: 3rem;
+}
+footer{
+    background-color: black;
+    color: whitesmoke;
+}
+.footer{
+    display: flex;
+    gap: 5;
+}
+.left-footer{
+    padding: 5rem;
+    width: 15%;
+    background: linear-gradient(to top  ,rgb(152, 97, 200), blue);
+}
+.left-footer img{
+  width: 50%;
+}
+.left-footer p{
+    font-size: 1.5rem;
+}
+.left-footer i{
+    margin-top: 2rem;
+    padding: 0rem 1rem;
+    font-size: 2rem;
+}
+.right-footer{
+padding: 0rem 5rem;
+display: flex;
+}
+.right-footer .company{
+    padding: 2rem 5rem;
+}
+.right-footer .company ul{
+    list-style: none;
+    font-size: 1.5rem;
+font-family: 'Times New Roman', Times, serif;
+    margin-left: -2rem;
+}
+
+.right-footer .company ul li{
+    padding-top: 2rem;
+}
+.right-footer .company ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-top: 1rem;
+    font-weight: 200;
+}
+.right-footer .contact{
+    padding: 2rem 5rem;
+} 
+.contact h2{
+    padding: 0rem;
+    font-size: 1.5rem;
+}
+.contact h3{
+    padding-top: 1rem;
+}
+.contact p{
+    padding: 0;
+    font-size: 1.3rem;
+} 
+footer #para{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem;
+}

@@ -1,3 +1,8 @@
+  :root{
+    --gap: 60px;        /* space between items */
+    --duration: 12s;    /* speed: lower = faster */
+  }
+
 body{
     margin: 0;
     padding: 0;
@@ -132,6 +137,12 @@ nav ul {
     display: flex;
     justify-content: space-around;
 }
+.sub-heading ul{
+    list-style: none;
+}
+.sub-heading ul li a{
+    text-decoration: none;
+}
 .btn button{
     padding: 10px;
     background-color: teal;
@@ -145,9 +156,7 @@ nav ul {
 .sub-heading ul{
     list-style: none;
 }
-.sub-heading ul li{
-    text-decoration: underline;
-}
+
 .sub-heading ul a{
     text-decoration: underline;
     font-size: 25px;
@@ -156,11 +165,11 @@ nav ul {
 }
 .right{
     animation: right-animation 2s linear;
-    animation-timeline: view( 50% 50%);
+    animation-timeline: view( 80% 0%);
 }
 
 @keyframes right-animation {
-  0% { opacity: 0; transform: translateX(50px); }
+  0% { opacity: 0; transform: translateY(100px); }
   100% { opacity: 1; transform: translateX(0); }
 }
 .left{
@@ -185,6 +194,9 @@ nav ul {
 .cards{
     display: flex;
     gap: 5rem;
+    
+    animation: right-animation 2s linear;
+    animation-timeline: view( 80% 0%);
 }
 .card-1{
     background:linear-gradient(45deg, rgb(122, 136, 142),rgb(49, 104, 207),rgb(140, 156, 162));
@@ -364,6 +376,7 @@ padding-left: 2rem;
     font-size: 5rem;
     color: darkblue;
 }
+
 .meeting-section{
     background-color: rgb(11, 30, 80);
     padding: 4rem;
@@ -372,7 +385,7 @@ padding-left: 2rem;
 }
 .left-side h2{
 color: whitesmoke;
-font-size: 5rem;
+font-size: 3rem;
 }
 .left-side h4{
     font-weight: bold;
@@ -400,6 +413,271 @@ font-size: 5rem;
   width: 100%;
   height: 80%;
 }
+.learning{
+    display: flex;
+    padding: 10rem 10rem;
+    
+}
+.learning .right-section{
+    padding: 0rem 10rem;
+    width: 50%;
+}
+.learning .left-section{
+    width: 50%;
+}
+.left-section h4{
+    font-size: 2rem;
+    color: #3a86ff;
+}
+.left-section h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.left-section ul{
+    font-size: 1.5rem;
+    list-style: none;
+}
+.left-section ul li span{
+    margin-right: 2rem;
+}
+.left-section ul li{
+    padding: 10px 0px;
+}
+.circle-container {
+  display: flex;
+  gap: 60px;
+  margin-left: 5rem;
+}
+.list p{
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+.circle {
+  text-align: center;
+}
+
+.progress {
+  --size: 120px;              /* Circle size */
+  --stroke: 12px;             /* Thickness */
+  --color1: #3a86ff;          /* Start color */
+  --color2: #8338ec;          /* End color */
+
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--color1),
+    var(--color2) calc(var(--percentage) * 1%),
+    #eee calc(var(--percentage) * 1%)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.progress span {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  background: #fff;
+  border-radius: 50%;
+  width: calc(var(--size) - var(--stroke));
+  height: calc(var(--size) - var(--stroke));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle p {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .first{
     display: none;
+}
+.second{
+    display: none;
+}
+.third{
+    display: none;
+}
+.forth{
+    display: none;
+}
+  .slider{
+    width:100%;
+    overflow:hidden;
+    box-sizing:border-box;
+    border-top:1px solid #eee;
+    border-bottom:1px solid #eee;
+  }
+
+
+  .slide-track{
+    display:flex;
+    width:200%;
+    animation: scroll var(--duration) linear infinite;
+    will-change: transform;
+  }
+
+
+  .slide-group{
+    display:flex;
+    justify-content: space-around ;
+    /* gap: var(--gap); */
+    align-items: center;
+    width:50%;
+    background-color:darkblue;
+    box-sizing:border-box;
+    padding:12px 20px; /* vertical padding */
+  }
+
+  
+  .slide-group span{
+    display:inline-block;
+    white-space:nowrap;          /* keep text in one line */
+    font-weight:700;
+    font-size: clamp(16px, 2.5vw, 22px);
+    padding:20px 20px;
+    background-color: #3a86ff;
+  }
+.slide-group span img{
+    height: 40px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.contact-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem 5rem;
+    gap: 5;
+}
+.left-contact{
+    padding: 5rem;
+}
+.left-contact h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.left-contact h3{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.left-contact p{
+    font-size: 1.5rem;
+}
+.right-contact{
+    border-radius: 2rem;
+    padding: 3rem;
+    width: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0,0,0.1),0px 3px 4px rgba(0, 0, 0, 0.8);
+}
+.right-contact form{
+    display: block;
+}
+form h1{
+    color: #3a86ff;
+}
+form h2{
+    font-size: 3rem;
+    font-weight: bold;
+}
+form label{
+    padding: 0.5rem 0rem;
+    font-size: 1.5rem;
+}
+form input{
+    padding: 0.2rem 0rem;
+    outline: none;
+    border-radius: 0.3rem;
+}
+#button{
+    font-size: 1rem;
+    margin-top: 2rem;
+    background-color: #3a86ff;
+    padding: 1rem 2rem;
+    color: whitesmoke;
+    border-radius: 1rem;
+    border: none;
+}
+.right-contact label{
+    display: block;
+}
+.right-contact input{
+    display: block;
+}
+footer{
+    background-color: black;
+    color: whitesmoke;
+}
+.footer{
+    display: flex;
+    gap: 5;
+}
+.left-footer{
+    padding: 5rem;
+    width: 15%;
+    background: linear-gradient(to top  ,rgb(152, 97, 200), blue);
+}
+.left-footer img{
+  width: 50%;
+}
+.left-footer p{
+    font-size: 1.5rem;
+}
+.left-footer i{
+    margin-top: 2rem;
+    padding: 0rem 1rem;
+    font-size: 2rem;
+}
+.right-footer{
+padding: 0rem 5rem;
+display: flex;
+}
+.right-footer .company{
+    padding: 2rem 5rem;
+}
+.right-footer .company ul{
+    list-style: none;
+    font-size: 1.5rem;
+font-family: 'Times New Roman', Times, serif;
+    margin-left: -2rem;
+}
+
+.right-footer .company ul li{
+    padding-top: 2rem;
+}
+.right-footer .company ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-top: 1rem;
+    font-weight: 200;
+}
+.contact h3{
+    padding-top: 2rem;
+    font-size: 1.3rem;
+}
+.contact p{
+    font-size: 1.3rem;
+}
+.right-footer .contact{
+    padding: 2rem 5rem;
+}
+footer #para{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem;
 }
