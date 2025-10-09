@@ -6,6 +6,7 @@
 body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .heading{
@@ -18,6 +19,20 @@ body{
     background-position: center center;
     /* filter: brightness(50%); */
 }
+.hidden{
+    display: none;
+}
+.menu{
+    display: none;
+}
+.navbar button{
+    
+    padding: 1px 15px;
+    margin-top: 2rem;
+    border: none;
+    background-color: white;
+}
+
 .navbar{
     color: whitesmoke;
     display: flex;
@@ -195,8 +210,6 @@ nav ul {
     display: flex;
     gap: 5rem;
     
-    animation: right-animation 2s linear;
-    animation-timeline: view( 80% 0%);
 }
 .card-1{
     background:linear-gradient(45deg, rgb(122, 136, 142),rgb(49, 104, 207),rgb(140, 156, 162));
@@ -457,10 +470,10 @@ font-size: 3rem;
 }
 
 .progress {
-  --size: 120px;              /* Circle size */
-  --stroke: 12px;             /* Thickness */
-  --color1: #3a86ff;          /* Start color */
-  --color2: #8338ec;          /* End color */
+  --size: 120px;              
+  --stroke: 12px;             
+  --color1: #3a86ff;          
+  --color2: #8338ec;          
 
   width: var(--size);
   height: var(--size);
@@ -533,13 +546,13 @@ font-size: 3rem;
     width:50%;
     background-color:darkblue;
     box-sizing:border-box;
-    padding:12px 20px; /* vertical padding */
+    padding:12px 20px; 
   }
 
   
   .slide-group span{
     display:inline-block;
-    white-space:nowrap;          /* keep text in one line */
+    white-space:nowrap;          
     font-weight:700;
     font-size: clamp(16px, 2.5vw, 22px);
     padding:20px 20px;
@@ -618,6 +631,7 @@ form input{
 .right-contact input{
     display: block;
 }
+
 footer{
     background-color: black;
     color: whitesmoke;
@@ -680,4 +694,268 @@ footer #para{
     font-size: 2rem;
     text-align: center;
     padding: 3rem;
+}
+@media (max-width: 992px) {
+.heading{
+    height: 110vh;
+}
+  
+  .navbar {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .menu{
+    display: flex;
+  }
+  #list2{
+    display: none;
+  }
+  .navbar ul{
+        position: absolute;
+        top: 50px;
+        left: 4px;
+        background-color: #fff;
+        color: #000;
+        width: 90%;
+        padding: 1rem;
+        height: auto;
+    }
+    ul li{
+        padding: 1rem;
+    }
+    ul li a{
+        color: #000;
+    }
+  nav ul {
+    flex-direction: column;
+    margin: 1rem 0 0;
+    padding: 0;
+  }
+  nav a {
+    margin: 8px 0;
+    font-size: 18px;
+  }
+
+  .main-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-section {
+    width: 100%;
+    font-size: 28px;
+    padding: 20px;
+  }
+  .hero-section-2 {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .main-content {
+    flex-direction: column;
+    padding: 30px;
+    gap: 2rem;
+  }
+  .main-content .left,
+  .main-content .right {
+    width: 100%;
+    text-align: center;
+  }
+  .main-content .left img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cards,
+  .second-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .cards .card-1,
+  .cards .card-2,
+  .cards .card-3,
+  .second-cards .card-4,
+  .second-cards .card-5,
+  .second-cards .card-6,
+  .second-cards .card-7 {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .content .para {
+    font-size: 1.3rem;
+  }
+
+  .meeting-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  .left-side, .right-side {
+    width: 100%;
+  }
+  .right-side h1 {
+    text-align: center;
+  }
+  .right-side img {
+    width: 100%;
+    height: auto;
+  }
+
+  .learning {
+    flex-direction: column;
+    padding: 3rem 1rem;
+    gap: 2rem;
+  }
+  .learning .left-section,
+  .learning .right-section {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .circle-container {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 20px;
+  }
+
+  .slide-group {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .slide-group span {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .contact-section {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+  .left-contact,
+  .right-contact {
+    width: 100%;
+    padding: 1rem;
+  }
+ form{
+padding: 2rem 1rem;    
+ }
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  .left-footer {
+    width: 80%;
+  }
+  .right-footer {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+    .navbar{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .navbar ul{
+        position: absolute;
+        top: 50px;
+        left: 4px;
+        background-color: #fff;
+        color: #000;
+        width: 90%;
+        padding: 1rem;
+        height: auto;
+    }
+    ul li{
+        padding: 1rem;
+    }
+    ul li a{
+        color: #000;
+    }
+    .heading{
+        overflow: hidden;
+        height: 150vh;
+    }
+.main-content .left{
+    flex-direction: column;
+}
+.sub-heading{
+    flex-direction: column;
+}
+.card-section{
+    padding: 1.5rem;
+}
+.card-1{
+    padding: 8rem 1rem;
+}
+.card-2{
+    padding: 2rem;
+}
+.card-3{
+    padding: 2rem;
+}
+.cards{
+    gap: 1rem;
+}
+  .hero-section {
+    font-size: 22px;
+  }
+  .right h1 {
+    font-size: 26px;
+  }
+  .right p {
+    font-size: 15px;
+  }
+  .testimonial{
+    margin: 1rem 1rem;
+  }
+  .contact{
+    flex-direction: column;
+  }
+  .testimonial h1 {
+    font-size: 2rem;
+  }
+  .img img{
+    width: 70%;
+  }
+  .left-section{
+    width: 100%;
+    padding: 1rem;
+  }
+  .learning .left-section h1 {
+    font-size: 1.8rem;
+  }
+.right-contact{
+    padding: 1rem;
+    width: 90%;
+}
+.left-footer{
+    width: 50%;
+}
+.contact{
+    padding: 1rem;
+}
+  form h2 {
+    font-size: 1.8rem;
+  }
+  .right-footer .contact{
+    padding: 1rem 1rem;
+}
+.right-footer .company{
+    padding: 1rem 1rem;
+}
+  footer #para {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
 }

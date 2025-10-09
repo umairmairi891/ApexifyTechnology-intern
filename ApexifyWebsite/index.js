@@ -23,3 +23,8 @@ btn4.addEventListener(('click'),()=>{
    forthPara.classList.toggle('forth');
 }
 )
+
+function showbar(){
+   const navbar=document.querySelector('#list');
+navbar.classList.toggle('hidden');
+}

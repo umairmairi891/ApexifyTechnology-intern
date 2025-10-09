@@ -5,21 +5,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services Page</title>
     <link rel="stylesheet" href="/ApexifyWebsite/services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
 </head>
 <body>
     <div class="container">
         <div class="navbar">
         <a href=""> <img src="/ApexifyWebsite/Images/Logo.webp" alt=""></a>
         <nav>
-          <ul>
+          
+          <ul id="list" class="hidden">
             <li> <a href="/ApexifyWebsite/index.html">Home</a></li>
             <li><a href="/ApexifyWebsite/About.html">About Us</a></li>
-            <li><a href="/ApexifyWebsite/Services.html">Services</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contact Us </a></li>
+            <li><a href="/ApexifyWebsite/services.html">Services</a></li>
+            <li><a href="/ApexifyWebsite/Projects.html">Projects</a></li>
+            <li><a href="/ApexifyWebsite/Contact.html">Contact Us </a></li>
+          </ul>
+          <ul id="list2"  >
+            <li> <a href="/ApexifyWebsite/index.html">Home</a></li>
+            <li><a href="/ApexifyWebsite/About.html">About Us</a></li>
+            <li><a href="/ApexifyWebsite/services.html">Services</a></li>
+            <li><a href="/ApexifyWebsite/Projects.html">Projects</a></li>
+            <li><a href="/ApexifyWebsite/Contact.html">Contact Us </a></li>
           </ul>
         </nav>
+        
+        <div class="menu">
+          <button onclick="showbar()" id="btn"><i class="fa fa-bars"></i></button>
+        </div>
       </div>
+
+      <div class="main-section">
+        <div class="cards">
+          <div class="card-1">
+            <img src="/ApexifyWebsite/Images/Website.webp" alt="">
+            <p class="">From concept to launch, we create stunning, responsive websites tailored to your brand and audience. Our design and development team focuses on aesthetics, functionality, and user experience, ensuring that your website not only looks great but also engages and converts visitors.</p>
+            <h2>Website Design & Development</h2>
+          </div>
+          <div class="card-2">
+            <img src="/ApexifyWebsite/Images/Application.webp" alt="">
+            <p class="">Transforming ideas into user-friendly applications is our specialty. Whether it’s a web or mobile app, we focus on creating intuitive, efficient, and scalable applications that support your business goals and provide an excellent user experience across all devices.</p>
+            <h2>App Design & Development</h2>
+          </div>
+          <div class="card-3">
+            <img src="/ApexifyWebsite/Images/Graphic-Design.webp" alt="">
+            <p class="">Good design speaks volumes, and our graphic design services are crafted to make your brand stand out. From social media graphics to marketing collateral, we bring creativity and precision to every project, ensuring that your visuals are impactful and aligned with your brand identity.</p>
+            <h2>Graphic Design </h2>
+          </div>
+        </div>
+        <div class="cards-2">
+          <div class="card1">
+            <img src="/ApexifyWebsite/Images/Logo-Design.webp" alt="">
+            <p class="">A memorable logo is essential to building a strong brand. We design logos that capture your business’s essence, are visually appealing, and leave a lasting impression. Our goal is to create a logo that resonates with your audience and builds recognition for your brand.</p>
+            <h2>Logo Design</h2>
+          </div>
+          <div class="card2">
+            <img src="/ApexifyWebsite/Images/SEO.webp" alt="">
+            <p>Expand your reach with targeted digital marketing and SEO services that improve your visibility and drive traffic to your site. Our team develops strategies tailored to your audience and industry, helping you rank higher in search results and connect with potential customers.</p>
+            <h2>Digital Marketing & SEO </h2>
+          </div>
+          <div class="card3">
+            <img src="/ApexifyWebsite/Images/Maintenance.webp" alt="">
+            <p>Launching your digital solution is just the beginning. We provide comprehensive maintenance and support services to ensure your website or application remains secure, updated, and fully functional. Our team is here to offer peace of mind, so you can focus on growing your business.</p>
+            <h2>Maintenance and Support</h2>
+          </div>
+        </div>
+      </div>
+        <section class="process">
+  <h4>HOW WE WORK</h4>
+  <h2>Bringing your project <br> to life, every step of the way.</h2>
+
+  <div class="steps">
+    <!-- Step 1 -->
+    <div class="step active">
+      <div class="icon">
+        <i class="fas fa-cogs"></i>
+      </div>
+      <h3>01</h3>
+      <p>Discovery & Consultation</p>
     </div>
+
+    <!-- Step 2 -->
+    <div class="step">
+      <div class="icon">
+        <i class="fas fa-file-alt"></i>
+      </div>
+      <h3>02</h3>
+      <p>Strategy & Planning</p>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="step active">
+      <div class="icon">
+        <i class="fas fa-rocket"></i>
+      </div>
+      <h3>03</h3>
+      <p>Design & Development</p>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="step">
+      <div class="icon">
+        <i class="fas fa-hands-helping"></i>
+      </div>
+      <h3>04</h3>
+      <p>Launch & Support</p>
+    </div>
+  </div>
+</section>
+
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="left-footer">
+          <img src="/ApexifyWebsite/Images/Logo.webp" alt="">
+          <p>Are off under folly death writter transforming cold regular. Almost do am or limits of hearts.</p>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div class="right-footer">
+          <div class="company">
+            <h1>Company</h1>
+            <ul>
+              <li><a href="/ApexifyWebsite/index.html">Home</a></li>
+              <li><a href="/ApexifyWebsite/About.html">About Us</a></li>
+              <li><a href="/ApexifyWebsite/services.html">Services</a></li>
+              <li><a href="/ApexifyWebsite/Projects.html">Projects</a></li>
+              <li><a href="/ApexifyWebsite/Contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="contact">
+            <h2>Contact Info</h2>
+            <h3>ADDRESS</h3>
+            <p>Comming Soon</p>
+            <h3>EMAIL:</h3>
+            <p>info@apexifytechnologies.com</p>
+            <h3>PHONE</h3>
+            <p>+1(682) 600-4502</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <p id="para">Copyright2023Apexify. All Rights Reserved by  Apexify</p>
+    </footer>
 </body>
+<script src="/ApexifyWebsite/index.js"></script>
 </html>

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us Page</title>
-    <link rel="stylesheet" href="/about.css">
+    <link rel="stylesheet" href="/ApexifyWebsite/about.css">
+    <script src="/ApexifyWebsite/index.js"></script>
     
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
@@ -13,14 +14,25 @@
         <div class="navbar">
         <a href=""> <img src="/ApexifyWebsite/Images/Logo.webp" alt=""></a>
         <nav>
-          <ul>
+          <ul id="list" class="hidden">
             <li> <a href="/ApexifyWebsite/index.html">Home</a></li>
             <li><a href="/ApexifyWebsite/About.html">About Us</a></li>
             <li><a href="/ApexifyWebsite/services.html">Services</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contact Us </a></li>
+            <li><a href="/ApexifyWebsite/Projects.html">Projects</a></li>
+            <li><a href="/ApexifyWebsite/Contact.html">Contact Us </a></li>
+          </ul>
+          <ul id="list2"  >
+            <li> <a href="/ApexifyWebsite/index.html">Home</a></li>
+            <li><a href="/ApexifyWebsite/About.html">About Us</a></li>
+            <li><a href="/ApexifyWebsite/services.html">Services</a></li>
+            <li><a href="/ApexifyWebsite/Projects.html">Projects</a></li>
+            <li><a href="/ApexifyWebsite/Contact.html">Contact Us </a></li>
           </ul>
         </nav>
+        
+        <div class="menu">
+          <button onclick="showbar()" id="btn"><i class="fa fa-bars"></i></button>
+        </div>
       </div>
         <h2>About Us Page</h2>
 <div class="main-content">
@@ -107,11 +119,11 @@
           <div class="company">
             <h1>Company</h1>
             <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">About Us</a></li>
-              <li><a href="">Services</a></li>
-              <li><a href="">Projects</a></li>
-              <li><a href="">Contact</a></li>
+              <li><a href="/ApexifyWebsite/index.html">Home</a></li>
+              <li><a href="/ApexifyWebsite/About.html">About Us</a></li>
+              <li><a href="/ApexifyWebsite/services.html">Services</a></li>
+              <li><a href="/ApexifyWebsite/Projects.html">Projects</a></li>
+              <li><a href="/ApexifyWebsite/Contact.html">Contact</a></li>
             </ul>
           </div>
           <div class="contact">
